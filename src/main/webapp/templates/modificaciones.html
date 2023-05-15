@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Modificacion</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/servlets">Inicio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+			    	<li class="nav-item active">
+			        	<a class="nav-link" href="/servlets/altas">Altas</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link" href="/servlets/bajas">Bajas</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link" href="/servlets/cambios">Modificacion</a>
+			      	</li>
+			    </ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<form action="/servlets/cambios" method="POST">
+			<label for="txtId">Id de su registro:</label><br>
+		  	<input type="number" id="txtId" name="txtId" placeholder="ID" autofocus required><br>
+			<label for="txtNameDog">Nombre del perrito:</label><br>
+		  	<input type="text" id="txtNameDog" name="txtNameDog" placeholder="Nombre Del Perro" required><br>
+		  	<label for="txtEdad">Edad:</label><br>
+		  	<input type="number" id="txtEdad" name="txtEdad" placeholder="Edad" required><br><br>
+		  	<label for="txtRaza">Raza:</label><br>
+		  	<input type="text" id="txtRaza" name="txtRaza" placeholder="Raza" required><br><br>
+		  	<label for="txtNameOwner">Nombre del dueño:</label><br>
+		  	<input type="text" id="txtNameOwner" name="txtNameOwner" placeholder="Dueño" required><br><br>
+		  	<input type="submit" value="Agregar Perrito">
+		</form>
+	</main>
+	<footer>
+		<div id="rightsReserved">
+			<hr>
+			Copyright&copy; 2023 - Página creada por Guy e Ikari - Todos los derechos reservados
+		</div>
+	</footer>
+</body>
+</html>
