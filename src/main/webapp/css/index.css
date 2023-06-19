@@ -1,0 +1,14 @@
+.title {
+	height: 50em;
+    width: 100%;
+    background-image:
+        linear-gradient(to bottom, rgb(156, 99, 52) 0.5%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 10) 100%),
+        url("./imgs/puppy-1.jpg");
+    vertical-align: middle;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #FFFFFF;
+}
